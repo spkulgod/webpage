@@ -16,9 +16,11 @@
       <a href="#top" class="logo">SK</a>
       <nav class="nav">
         <a href="#experience">Experience</a>
+        <a href="#internships">Internships</a>
         <a href="#education">Education</a>
         <a href="#skills">Skills</a>
         <a href="#research">Research</a>
+        <a href="#projects">Projects</a>
         <a href="#achievements">Achievements</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -108,6 +110,70 @@
             <ul>
               <li>Managed a weld line with over fifty employees in the frame shop for small commercial vehicles.</li>
               <li>Improved frame production quality by identifying root causes of defects and driving fixes at OEM and vendor sites.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="internships" class="section">
+      <div class="container">
+        <h2 class="section-title">Internships</h2>
+        <div class="card-list">
+          <article class="card">
+            <div class="card-header">
+              <div class="company-badge">E</div>
+              <div>
+                <h3>Student Researcher &amp; Summer Research Intern</h3>
+                <p class="card-meta">Existential Robotics Laboratory, UC San Diego · Oct 2018 – Jun 2020</p>
+              </div>
+            </div>
+            <ul>
+              <li>Developed phase-space motion primitives for general bipedal robots to achieve non-periodic locomotion.</li>
+              <li>Formulated co-safe LTL task specifications as deterministic shortest-path problems and solved them via graph search.</li>
+              <li>Designed an anytime motion-planning algorithm for robots with hybrid locomotion dynamics to satisfy infinite-horizon temporal-logic tasks.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="company-badge">I</div>
+              <div>
+                <h3>Research Intern</h3>
+                <p class="card-meta">Indian Institute of Technology, Bombay · May 2016 – Jul 2016 &amp; Dec 2016</p>
+              </div>
+            </div>
+            <ul>
+              <li>Developed a tag-based indoor localization method for quadcopters with downward-facing cameras using C++ and ROS.</li>
+              <li>Designed robust algorithms for line following, waypoint navigation, trajectory tracking, and autonomous landing on moving platforms in cluttered environments.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="company-badge">I</div>
+              <div>
+                <h3>Research Intern</h3>
+                <p class="card-meta">Indian Institute of Science, Bangalore · May 2015 – Jul 2015 &amp; Dec 2015</p>
+              </div>
+            </div>
+            <ul>
+              <li>Designed an oscillatory cylinder steam engine for concentrated solar thermal power generation.</li>
+              <li>Built analytical kinematic and dynamic models in MATLAB and optimized stress and heat distribution using thermodynamic and vibration analysis.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-header">
+              <div class="company-badge">T</div>
+              <div>
+                <h3>Summer Intern</h3>
+                <p class="card-meta">TATA Advanced Materials Limited, Bangalore · May 2014 – Jun 2014</p>
+              </div>
+            </div>
+            <ul>
+              <li>Received training on composite part production, non-destructive testing, and lean manufacturing principles.</li>
+              <li>Conducted labour and cycle-time analysis, 5S auditing, and implemented process improvements in composite manufacturing.</li>
             </ul>
           </article>
         </div>
@@ -218,8 +284,17 @@
                 in sign language, using 3D facial keypoints and sequence models for classification and analysis.
               </p>
               <p class="card-links">
+                <a href="https://ieeexplore.ieee.org/document/7806232" target="_blank" rel="noreferrer">IEEE Xplore</a>
                 <a href="https://archive.ics.uci.edu/dataset/317/grammatical+facial+expressions" target="_blank" rel="noreferrer">UCI Dataset</a>
                 <a href="https://github.com/bhuvi3/GrammaticalFacialExpressionDetection" target="_blank" rel="noreferrer">Project GitHub</a>
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="card-title">Anytime Motion Planning for Infinite-horizon Tasks Specified by Temporal Logic Formulas</h3>
+              <p class="card-meta">S. Kulgod, N. Atanasov · In progress</p>
+              <p class="card-body-text">
+                Ongoing work on scalable anytime graph-search methods for hybrid-dynamics robots tasked with infinite-horizon temporal-logic specifications, extending finite-horizon LTL-guided locomotion planning.
               </p>
             </article>
           </div>
@@ -268,6 +343,26 @@
       </div>
     </section>
 
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projects</h2>
+        <article class="card">
+          <ul>
+            <li><strong>Multimodal trajectory prediction</strong>: Implemented a graph-based model with HD map inputs to predict multimodal trajectories for all vehicles in a scene, trained on nuScenes prediction data, achieving MinADE_5 of 2.46, MinADE_10 of 1.87, and MinFDE_1 of 10.68.</li>
+            <li><strong>Improved Batch-Constrained Q-learning (Improved BCQ)</strong>: Developed an off-policy batch RL algorithm that trades off between maximizing Q-values and staying close to the dataset behavior, improving long-term rewards by about 20% over BCQ on MuJoCo continuous-control tasks.</li>
+            <li><strong>Bachelor’s thesis – multi-quadcopter search</strong>: Modeled state-estimation error for a downward-facing camera on a quadcopter and used it to implement centroidal Voronoi configuration based search with multiple quadcopters, validated in Gazebo simulations.</li>
+            <li><strong>Mobile manipulator for RoboMaster</strong>: Designed an image-based path-planning and control stack for a mobile manipulator to move and stack boxes to maximize tower height for the DJI RoboMaster Mobile Manipulation Challenge at ICRA&nbsp;2017.</li>
+            <li><strong>Driving with deep RL</strong>: Built DDPG and TD3 agents for Duckietown using dashcam images, and reduced training time and replay size by feeding encodings from a fully convolutional autoencoder into the policy and value networks.</li>
+            <li><strong>Image segmentation &amp; captioning</strong>: Trained fully convolutional autoencoder and U-Net models on Cityscapes for semantic segmentation (73.9% and 81.3% pixel accuracy), and implemented LSTM/RNN-based captioning on COCO (BLEU-1 up to 90.09, BLEU-4 up to 0.44).</li>
+            <li><strong>Reinforcement learning for control</strong>: Implemented DDPG, TD3, and REINFORCE on large continuous-control MuJoCo tasks, and derived robust controllers via value and policy iteration for noisy inverted-pendulum systems; also solved MountainCar with SARSA and Q-learning.</li>
+            <li><strong>Sampling-based path planning</strong>: Implemented weighted-A*, RTAA*, RRT*, bidirectional RRT, and RRT-Connect with path smoothing to generate feasible paths in 3D environments under translation and timing constraints.</li>
+            <li><strong>Particle filter SLAM</strong>: Performed state estimation for a differential-drive robot using IMU and odometry, with particle filters tracking pose in an occupancy grid map updated from LiDAR and textured via RGB-D floor detection.</li>
+            <li><strong>Low-cost automated guided vehicle</strong>: Designed and fabricated a low-cost AGV for Daimler India with an innovative tugging mechanism enabling simple docking and undocking with trolleys on the shop floor.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
     <section id="achievements" class="section">
       <div class="container">
         <h2 class="section-title">Achievements</h2>
@@ -275,7 +370,8 @@
           <article class="card">
             <ul>
               <li><strong>Welcome Aboard Award</strong> at Torc Robotics (Oct 2020) for noteworthy contributions within the first six months.</li>
-              <li><strong>Robot sponsorship</strong> to participate in the final round of the DJI RoboMaster Mobile Manipulation Challenge at ICRA 2017, Singapore.</li>
+              <li><strong>Student travel award</strong> for presenting work at the American Control Conference (ACC) 2020.</li>
+              <li><strong>Robot sponsorship</strong> and sole undergraduate in the only Indian team to participate in the final round of the DJI RoboMaster Mobile Manipulation Challenge at ICRA 2017, Singapore.</li>
             </ul>
           </article>
         </div>
