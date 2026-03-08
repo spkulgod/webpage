@@ -321,6 +321,47 @@ a:hover {
   display: block;
 }
 
+.card-media--half {
+  max-width: 50%;
+}
+
+/* YouTube link (thumbnail + label) when embed is disabled */
+.card-media--youtube {
+  max-width: 560px;
+}
+
+.card-media-youtube-link {
+  display: block;
+  position: relative;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-media-youtube-link img {
+  width: 100%;
+  height: auto;
+  display: block;
+  vertical-align: middle;
+}
+
+.card-media-youtube-label {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-subtle);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.card-media-youtube-link:hover .card-media-youtube-label {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
+}
+
 .card-media--gifs {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
